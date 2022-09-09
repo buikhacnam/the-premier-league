@@ -2,7 +2,7 @@
   "name": "the-premier-league",
   "author": "Casey Bui",
   "email": "buikhacnam11@gmail.com",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "View the Premier League table of the current season",
   "homepage": "https://buinam.com",
   "type": "module",
