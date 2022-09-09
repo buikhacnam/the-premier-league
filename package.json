@@ -1,0 +1,33 @@
+{
+  "name": "the-premier-league",
+  "author": "Casey Bui",
+  "email": "buikhacnam11@gmail.com",
+  "version": "0.0.4",
+  "description": "View the Premier League table of the current season",
+  "homepage": "https://buinam.com",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ."
+  },
+  "bin": "./index.js",
+  "dependencies": {
+    "dotenv": "^16.0.2",
+    "nanospinner": "^1.1.0",
+    "node-fetch": "^3.2.10"
+  },
+  "keywords": [
+    "premier league",
+    "premier league table",
+    "table",
+    "football",
+    "soccer",
+    "epl",
+    "chealsea",
+    "manchester united",
+    "manchester city",
+    "liverpool",
+    "tottenham",
+    "arsenal"
+  ]
+}
