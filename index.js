@@ -10,12 +10,7 @@ async function start() {
 	const spinner = createSpinner('English Premier League').start()
 	const response = await fetch(apiUrl)
 	const data = await response.json()
-
 	const table = data?.items?.[0]?.table
-
-	console
-
-	// done loading
 
 	if (table && table?.rows?.length > 0) {
 		spinner.success({ text: `` })
@@ -31,13 +26,12 @@ async function start() {
 			RF: row?.recentForm?.length > 0 ? row.recentForm.join(' ') : '--',
 		}))
 
-		// remove the first column 'index'
+		// replace the first column 'index' with position
 		const transformed = rows.reduce((acc, { Position, ...x }) => {
 			acc[Position] = x
 			return acc
 		}, {})
 
-		// console log table based on position, club name, points, played, won, drawn, lost, goal difference
 		console.table(transformed)
 	} else {
 		spinner.fail({ text: `` })
