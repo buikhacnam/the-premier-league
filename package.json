@@ -3,7 +3,7 @@
   "author": "Casey Bui",
   "email": "buikhacnam11@gmail.com",
   "version": "0.0.5",
-  "description": "View the Premier League table of the current season",
+  "description": "View the Premier League table of the current season from your command line",
   "homepage": "https://buinam.com",
   "type": "module",
   "main": "index.js",

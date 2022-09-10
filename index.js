@@ -13,7 +13,7 @@ async function start() {
 	const table = data?.items?.[0]?.table
 
 	if (table && table?.rows?.length > 0) {
-		spinner.success({ text: `` })
+		spinner.success({ text: '' })
 		const rows = table.rows.map(row => ({
 			Position: row?.position,
 			Club: row?.clubName,
@@ -34,7 +34,7 @@ async function start() {
 
 		console.table(transformed)
 	} else {
-		spinner.fail({ text: `` })
+		spinner.fail({ text: '' })
 		console.log('Oops, something went wrong')
 	}
 
