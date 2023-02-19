@@ -32,7 +32,7 @@ async function start() {
 			return acc
 		}, {})
 
-		console.table(rows)
+		console.table(transformed)
 	} else {
 		// spinner.fail({ text: '' })
 		console.log(' Oops, something went wrong')
