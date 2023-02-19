@@ -10,7 +10,7 @@ async function start() {
 	const spinner = createSpinner('English Premier League').start()
 	const response = await fetch(apiUrl)
 	const data = await response.json()
-	const table = data?.items?.[0]?.table
+	const table = data?.items?.[0]?.standings?.tables?.[0]
 
 	if (table && table?.rows?.length > 0) {
 		spinner.success({ text: '' })
@@ -32,10 +32,10 @@ async function start() {
 			return acc
 		}, {})
 
-		console.table(transformed)
+		console.table(rows)
 	} else {
-		spinner.fail({ text: '' })
-		console.log('Oops, something went wrong')
+		// spinner.fail({ text: '' })
+		console.log(' Oops, something went wrong')
 	}
 
 	process.exit(0)
